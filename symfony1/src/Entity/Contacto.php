@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ContactosRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\ContactoRepository")
  */
-class Contactos
+class Contacto
 {
     /**
      * @ORM\Id()
@@ -20,11 +20,11 @@ class Contactos
      * @ORM\Column(type="string", length=255)
      */
     private $nombre;
+
     /**
-     * @ORM\Column(type="string", length=200)
+     * @ORM\Column(type="string", length=255)
      */
     private $apellido1;
-    
 
     public function getId()
     {
